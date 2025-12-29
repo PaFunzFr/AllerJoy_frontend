@@ -7,8 +7,9 @@
 /bazel-out
 /_ignore
 _ignore
-/assets/img
-/assets/icons
+src/assets/img
+src/assets/icons
+src/assets/fonts/files
 
 # Node
 /node_modules

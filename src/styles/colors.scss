@@ -1,0 +1,30 @@
+$colors: (
+    // Brand
+    primary: #8c5126,
+    primary-soft: #9ccdd8,
+    accent: #248ea5,
+
+    // Status
+    success: #4caf50,
+    warning: #f6c453,
+    danger: #d9534f,
+
+    // Backgrounds
+    background: #dbf0f4,
+    surface: #f4d8c4,
+    surface-muted: #eef3f5,
+
+    // Borders & Divider
+    border: #d6e0e4,
+    border-strong: #b7c8cf,
+
+    // Text
+    text-primary: #2b2b2b,
+    text-secondary: #5f6b70,
+    text-muted: #8fa1a8,
+    text-inverse: #ffffff
+);
+
+@function color($key) {
+    @return map-get($colors, $key);
+}

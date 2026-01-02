@@ -1,30 +1,27 @@
-$colors: (
+:root {
     // Brand
-    primary: #8c5126,
-    primary-soft: #9ccdd8,
-    accent: #248ea5,
+    --color-primary: #8c5126;
+    --color-primary-soft: #9ccdd8;
+    --color-accent: #248ea5;
 
     // Status
-    success: #4caf50,
-    warning: #f6c453,
-    danger: #d9534f,
+    --color-success: #4caf50;
+    --color-warning: #f6c453;
+    --color-danger: #d9534f;
 
     // Backgrounds
-    bg: #dbf0f4,
-    surface: #f4d8c4,
-    surface-muted: #eef3f5,
+    --color-bg: #dbf0f4;
+    --color-surface: #f4d8c4;
+    --color-surface-muted: #eef3f5;
 
     // Borders & Divider
-    border: #d6e0e4,
-    border-strong: #b7c8cf,
+    --color-border: #d6e0e4;
+    --color-border-strong: #b7c8cf;
 
     // Text
-    text-primary: #2b2b2b,
-    text-secondary: #5f6b70,
-    text-muted: #8fa1a8,
-    text-inverse: #ffffff
-);
+    --color-text-primary: #2b2b2b;
+    --color-text-secondary: #5f6b70;
+    --color-text-muted: #8fa1a8;
+    --color-text-inverse: #ffffff;
+};
 
-@function color($key) {
-    @return map-get($colors, $key);
-}

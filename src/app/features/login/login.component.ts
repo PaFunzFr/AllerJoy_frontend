@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CenteredWrapperComponent } from '../../core/layout/wrappers/centered-wrapper/centered-wrapper.component';
+import { LoginBtnComponent } from '../../shared/ui/login-btn/login-btn.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CenteredWrapperComponent],
+  imports: [CenteredWrapperComponent, LoginBtnComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })

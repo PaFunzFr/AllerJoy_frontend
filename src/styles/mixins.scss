@@ -1,6 +1,22 @@
-@mixin dFlex($fd, $ai, $jc) {
+@use 'colors' as *;
+@use 'variables' as *; 
+
+@mixin dFlex($fd: row, $ai, $jc) {
     display: flex;
     flex-direction: $fd;
     align-items: $ai;
     justify-content: $jc;
+}
+
+@mixin login-btn() {
+    @include dFlex($ai:center, $jc:center);
+    color: white;
+    height: 35px;
+    width: 140px;
+    font-size: 18px;
+    background-color: var(--color-accent);
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius-sm);
 }

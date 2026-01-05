@@ -3,7 +3,7 @@
 :root {
     /* Font Family */
     --font-main: 'Caveat';
-    --font-sub: '';
+    --font-sub: 'Inter';
 
     /* Font Weights */
     --fw-regular: 400;
@@ -33,6 +33,13 @@
 h1 {
     font-family: var(--font-main);
     font-size: var(--fs-2xl);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--font-sub);
+    font-size: var(--fs-md);
     margin: 0;
     padding: 0;
 }

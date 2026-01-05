@@ -13,14 +13,14 @@ import { ButtonConfig } from '../../shared/models/buttonConfig.interface';
 export class LoginComponent {
 
   loginBtn: ButtonConfig = {
-    label: 'Login',
+    label: 'LOGIN',
     backgroundColor: 'var(--color-accent)',
-    onClick: () => this.handleLogin(),
+    route: '/'
   };
 
   signupBtn: ButtonConfig = {
-    label: 'Get Invite',
-    backgroundColor: 'var(--color-accent)',
+    label: 'GET INVITE',
+    backgroundColor: 'var(--color-primary-soft)',
     onClick: () => this.handleSignup(),
   };
 

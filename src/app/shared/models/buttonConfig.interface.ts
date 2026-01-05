@@ -1,7 +1,7 @@
 export interface ButtonConfig {
     label: string;
-    onClick: () => void;
+    onClick?: () => void;
     backgroundColor?: string;
+    route?: string;
     disabled?: boolean;
-    variant?: 'primary' | 'secondary' | 'danger';
 }

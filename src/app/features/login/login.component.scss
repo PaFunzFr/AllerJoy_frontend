@@ -3,10 +3,11 @@
 
 main {
     @include dFlex($fd:column, $ai:center, $jc:center);
-    padding: 16px;
+    gap: var(--spacing-sm);
+    padding: 32px 16px;
+    margin: 20px 5vw;
     width: 400px;
     height: auto;
-    margin: 20px 5vw;
     border-radius: var(--border-radius-md);
 
     background: rgba(255, 255, 255, 0.639);
@@ -20,6 +21,11 @@ main {
     >p {
         text-align: center;
         max-width: 300px;
+    }
+    .button-wrapper {
+        @include dFlex($fd:column, $ai:center, $jc:center);
+        margin-top: 14px;
+        gap: var(--spacing-sm);
     }
 }
 

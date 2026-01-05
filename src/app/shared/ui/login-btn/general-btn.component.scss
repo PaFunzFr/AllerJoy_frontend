@@ -1,5 +1,6 @@
 @use 'mixins' as *; 
 
 button {
-    @include login-btn();
+    @include general-btn();
+    margin: 0;
 }

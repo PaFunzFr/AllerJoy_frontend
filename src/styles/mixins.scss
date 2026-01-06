@@ -13,9 +13,10 @@
     @include dFlex($ai:center, $jc:center);
     font-weight: 700;
     font-family: var(--font-main);
-    font-size: var(--fs-xl);
+    font-size: clamp(18px, 5vw, 30px);
     margin: 5px 0;
     padding: 6px 12px;
+    min-width: 200px;
     border: none;
     border-radius: var(--border-radius-sm);
     color: white;

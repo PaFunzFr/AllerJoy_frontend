@@ -1,0 +1,17 @@
+@use 'mixins' as *; 
+
+.header-wrapper {
+    @include dFlex($ai:center, $jc:center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+
+    header {
+        @include dFlex($ai:center, $jc:space-between);
+        width: 100%;
+        max-width: 400px;
+        padding: 0 24px;
+    }
+}

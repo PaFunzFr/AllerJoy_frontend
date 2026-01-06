@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CenteredWrapperComponent } from '../../core/layout/wrappers/centered-wrapper/centered-wrapper.component';
-import { GeneralBtnComponent } from '../../shared/ui/login-btn/general-btn.component';
+import { GeneralBtnComponent } from '../../shared/ui/general-btn/general-btn.component';
 import { ButtonConfig } from '../../shared/models/buttonConfig.interface';
 
 @Component({

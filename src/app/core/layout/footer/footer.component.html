@@ -1,0 +1,8 @@
+<div class="footer-wrapper">
+    <footer>
+        @for (icon of navbarService.navbar; track icon) {
+            <img [src]="icon.image" [alt]="icon.name">
+        }
+    </footer>
+</div>
+

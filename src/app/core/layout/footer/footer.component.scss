@@ -1,0 +1,18 @@
+@use 'mixins' as *; 
+
+.footer-wrapper {
+    @include dFlex($ai:center, $jc:center);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--color-primary-soft);
+
+    footer {
+        @include dFlex($ai:center, $jc:space-between);
+        width: 100%;
+        max-width: 400px;
+        padding: 0 24px;
+    }
+}

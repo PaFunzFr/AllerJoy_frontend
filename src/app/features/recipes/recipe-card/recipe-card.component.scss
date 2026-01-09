@@ -1,0 +1,10 @@
+@use 'mixins' as *; 
+
+.recipe-card {
+    @include dFlex($ai:center, $jc:space-between);
+}
+
+.card-left,
+.card-right {
+    @include dFlex($ai:center, $jc:flex-start);
+}

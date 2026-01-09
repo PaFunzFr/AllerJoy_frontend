@@ -1,0 +1,46 @@
+@use 'mixins' as *; 
+
+main {
+    @include dFlex($fd:column, $ai:center, $jc:center);
+    margin-bottom: 100px;
+
+    .atf-recipes {
+        @include dFlex($fd:column, $ai:center, $jc:center);
+        position: relative;
+        background-image: url("../../../assets/img/hero_banner.png");
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: clamp(250px, 35vw, 400px);
+
+        h2 {
+            z-index: 2;
+            color: white;
+            text-align: center;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: clamp(250px, 35vw, 400px);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.813), rgba(255, 255, 255, 0))
+        }
+    }
+
+    .recipes {
+        width: clamp(240px, calc(100% - 2* var(--margin-horizontal)), 800px);
+        padding: 0 var(--margin-horizontal);
+
+        .revcipes-list {
+            @include dFlex($fd:column, $ai:flex-start, $jc:center);
+        }
+    }
+
+    .current-event,
+    app-group-list {
+        margin-top: 30px;
+    }
+}

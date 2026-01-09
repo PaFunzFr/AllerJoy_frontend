@@ -39,8 +39,8 @@ main {
     }
 
     .current-event {
-        width: clamp(240px, calc(100% - 48px), 800px);
-        padding: 0 24px;
+        width: clamp(240px, calc(100% - 2* var(--margin-horizontal)), 800px);
+        padding: 0 var(--margin-horizontal);
 
         .event-card-bg {
             border-radius: var(--border-radius-md);

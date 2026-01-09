@@ -11,9 +11,9 @@ import { Router } from '@angular/router';
 })
 
 export class GeneralBtnComponent {
+  @Input({ required:true }) config!: ButtonConfig;
 
   constructor(private router: Router) {}
-    @Input({ required:true }) config!: ButtonConfig;
 
     navigate() {
       if (this.config.route) {

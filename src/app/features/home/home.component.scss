@@ -2,9 +2,11 @@
 
 main {
     @include dFlex($fd:column, $ai:center, $jc:center);
+    margin-bottom: 100px;
 
     .atf {
         @include dFlex($fd:column, $ai:center, $jc:flex-end);
+        position: relative;
         background-image: url("../../../assets/img/hero_banner.png");
         background-size: cover;
         background-position: top;
@@ -52,5 +54,10 @@ main {
         .event-wrapper-bg {
             padding: 10px 20px;
         }
+    }
+
+    .current-event,
+    app-group-list {
+        margin-top: 30px;
     }
 }

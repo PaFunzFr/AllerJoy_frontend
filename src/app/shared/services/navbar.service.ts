@@ -21,7 +21,7 @@ export class NavbarService {
     },
     {
       name: 'Contacts',
-      image: '../../assets/icons/nav/users.svg',
+      image: '../../assets/icons/nav/user.svg',
       path: ''
     },
     {

@@ -1,0 +1,19 @@
+@use 'mixins' as *; 
+
+.group-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary-soft);
+    overflow: hidden;
+    border-radius: 16px;
+
+    >img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin: 10px 8px;
+    }
+}

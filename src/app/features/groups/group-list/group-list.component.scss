@@ -1,0 +1,13 @@
+.group-list, h2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px 0px;
+    width: clamp(240px, calc(100% - 48px), 800px);
+    padding: 0 24px;
+    margin: 0 auto;
+
+    app-group-card {
+        width: 49%;
+    }
+}
